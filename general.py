@@ -1,5 +1,8 @@
 import codecs
 import Crypto
+import Crypto.Util
+import Crypto.Util.number
+
 
 def ascii_to_chr(a):
 	b = [chr(i) for i in a]
