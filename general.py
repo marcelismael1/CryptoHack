@@ -49,4 +49,4 @@ if __name__ == '__main__':
 	i = 11515195063862318899931685488813747395775516287289682636499965282714637259206269
 
 	#Crypto.Util.number.bytes_to_long 
-	print(Crypto.Util.number.long_to_bytes(i))
+	print(Crypto.Util.number.long_to_bytes(i).decode())
