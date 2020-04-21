@@ -16,5 +16,11 @@ def gcd(a, b):
 def get_divisors(a):
     d = [i  for i in range(1,a+1) if a%i == 0]
     return d
-#def get_v_u(p,q):
 
+#Python program for Extended Euclidean algorithm
+def egcd(a, b):
+    if a == 0:
+        return (b, 0, 1)
+    else:
+        gcd, x, y = egcd(b % a, a)
+        return (gcd, y - (b//a) * x, x)
